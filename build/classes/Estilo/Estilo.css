@@ -1,0 +1,300 @@
+
+*{
+    -fx-font-family: Verdana;    
+}
+
+.fondo{
+    -fx-background-color: white;
+}
+
+.Pane{
+    -fx-background-color: #FE8625;
+    -fx-background-radius: 30;
+}
+
+.TituloPrincipal{
+    -fx-text-fill: #0D6678;
+    -fx-font-size: 40;
+    -fx-font-weight: bold; 
+}
+
+.BotonTitulos{
+    -fx-text-fill: #32302F;
+    -fx-font-size: 20;    
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.Indice1{
+    -fx-text-fill: #003d90;
+    -fx-font-size: 20;    
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+.Indice2{
+    -fx-text-fill: #0782BD;
+    -fx-font-size: 16;    
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.Indice3{
+    -fx-text-fill: #008ee5;
+    -fx-font-size: 13;    
+    -fx-background-color: transparent;
+}
+.accordion .titled-pane > *.content{
+    -fx-background-color: transparent ;
+    -fx-border-color: transparent;
+}
+
+.accordion .titled-pane .title {
+    -fx-background-color: transparent ;
+}
+#principal{
+
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);;
+}
+
+#transp{
+    -fx-background-color: transparent;
+}
+
+.BotonSubmodulo{
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-background-color: #222222;
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(#111111, #222222);    
+}
+
+.BotonSubmodulo:disabled{
+    -fx-background-color: linear-gradient(#444444, #555555);
+}
+
+.BotonSubmodulo:hover{  
+    -fx-font-weight: bold;
+    -fx-background-color: #000000;    
+}
+
+.gradiente{
+    -fx-background-color: linear-gradient(#111111, #222222);    
+}
+
+.seleccionado{
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-color: #000000;        
+    -fx-border-color: #0782BD;      
+    -fx-border-width: 8px;     
+    -fx-background-insets: 0 0 0 8;
+}
+.seleccionado:disabled{
+    -fx-background-color: linear-gradient(#444444, #555555);   
+}
+
+.tituloSubmodulo{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-background-color: #222222;  
+}
+
+.CajaModulos{
+    -fx-background-color: #222222;
+}
+
+.CajaContenido{
+    -fx-background-color: white;
+}
+
+#activo{
+    -fx-background-color: #FDF4C1;
+}
+
+#blanco{
+    -fx-background-color: white;
+}
+
+#ch{
+    -fx-font-size: 15;
+
+}
+
+.TextoContenido{
+    -fx-font-size: 15;
+
+}
+
+.DescripcionImagen{
+    -fx-text-align: center;
+    -fx-font-style: italic;
+    -fx-font-size: 13;
+}
+
+
+.Subtitulo{
+    -fx-text-fill: darkblue;
+    -fx-font-size: 16;
+    -fx-font-weight: bold; 
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.boton1{
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-border-radius: 0;
+    -fx-font-weight: bold; 
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+
+}
+
+.boton1:hover{
+    -fx-background-color:#0A65BF ;
+}
+
+.boton2:hover{
+    -fx-background-color: #bf0a0a;
+}
+
+.boton2{
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-font-weight: bold; 
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(#db3232 0%, #cf2020 25%, #c91818 75%, #bf0a0a 100%);
+}
+
+
+.tooltip{
+    -fx-font-size: 12;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5px;
+}
+
+.botonInicio{
+    -fx-background-color:  #0782BD;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.panelInicio{
+    -fx-background-color:  #222222;   
+}
+
+#cursorNormal{
+    -fx-cursor: default;
+}
+
+.separator .line { 
+    -fx-border-color: #AAAAAA;
+    -fx-border-width: 2 0 0 0 ;
+}
+
+#negrita{
+    -fx-font-weight: bold;
+}
+.negrita{
+    -fx-font-weight: bold;
+    -fx-font-size: 16;    
+
+}
+.AreaTexto{
+    -fx-text-fill: #0782BD;
+    -fx-font-size: 20;    
+    -fx-cursor: text;
+    -fx-font-weight: bold;
+    -fx-background-color: #DDDDDD ;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+}
+
+.list-cell {
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;    
+}
+
+.cajaPregunta{
+    -fx-border-color: gray;
+    -fx-border-insets: 10;
+    -fx-border-width: 1;
+    -fx-border-radius: 7;
+}
+.correcta{
+    -fx-border-color: green;
+    -fx-border-insets: 10;
+    -fx-border-width: 1;
+    -fx-border-radius: 7;
+}
+.incorrecta{
+    -fx-border-color: red;
+    -fx-border-insets: 10;
+    -fx-border-width: 1;
+    -fx-border-radius: 7;
+}
+
+.respCorrecta{
+    -fx-border-color: green;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+}
+
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: blue;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+}
+
+.letraGradienteAzul{
+    -fx-text-fill:  linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+}
+
+.dTitulo{    
+    -fx-text-fill: #003d90;
+    -fx-font-size: 14;    
+    -fx-font-weight: bold;   
+}
+
+.dTexto{
+
+
+
+    -fx-font-size: 13;
+    -fx-text-alignment: justify;
+}
+
+.dBoton1{
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-border-radius: 0;
+    -fx-font-weight: bold; 
+    -fx-cursor: hand;
+    -fx-background-insets: 5;
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+
+}
+
+.dBoton2{
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-font-weight: bold; 
+    -fx-cursor: hand;
+    -fx-background-insets: 5;
+    -fx-background-color: linear-gradient(#db3232 0%, #cf2020 25%, #c91818 75%, #bf0a0a 100%);   
+}

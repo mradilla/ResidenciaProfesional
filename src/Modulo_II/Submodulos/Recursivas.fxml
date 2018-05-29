@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="815.0" prefWidth="1100.0" style="-fx-background-color: white;" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_II.Submodulos.ExplicacionController">
+   <children>
+      <Label styleClass="Indice1" text="Análisis sintáctico con funciones recursivas" />
+      <Separator prefWidth="200.0" />
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="Una gramática de contexto libre constituye un mecanismo para expresar un lenguaje formal. Sin embargo no es el único, ya que la notación BNF y los diagramas de sintaxis tienen la misma potencia. &#10;&#10;&#10;&#10;Partiendo de que la notación BNF también permite expresar un lenguaje formal, se sabe que es posible construir un analizador sintáctico mediante cualquier lenguaje de programación que permita la recursión. " textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label styleClass="Indice2" text="Correspondencia con flujos de ejecución">
+         <VBox.margin>
+            <Insets bottom="30.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="Existe una correspondencia entre el flujo de ejecución de un programa y el camino que se puede seguir en uno o varios diagramas de sintaxis para reconocer una sentencia válida. &#10;&#10;Por ejemplo, la yuxtaposición quedaría como ilustra la figura:" textAlignment="JUSTIFY" wrapText="true" />
+      <HBox>
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="165.0" fitWidth="498.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/flujo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox prefHeight="53.0" prefWidth="525.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#regresarIndice" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/indice.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Inicio" />
+               </tooltip>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#analisis2" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <tooltip>
+                  <Tooltip text="Análisis sintáctico" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+   </padding>
+</VBox>

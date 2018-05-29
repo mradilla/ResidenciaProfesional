@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox fx:id="cajaExamen" styleClass="CajaContenido" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_II.Submodulos.ExamenController">
+   <children>
+      <HBox>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label layoutX="187.0" layoutY="68.0" styleClass="Indice1" text="EXAMEN" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="3042.0" prefWidth="700.0" style="-fx-background-color: white;" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_I.Submodulos.OperacionesController">
+   <children>
+      <Label styleClass="Indice1" text="Operaciones con diagramas de sintaxis" />
+      <Separator prefWidth="200.0" />
+      <Label styleClass="TextoContenido" text="Hasta ahora ya se conocen los elementos que conforman un diagrama de sintaxis, se mencionó que para relacionarlos se hace uso de flechas, pero para poder estructurarlo es necesario conocer las operaciones que pueden representar estos diagramas, a continuación se explica cada una de ellas." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label styleClass="Subtitulo" text="Yuxtaposición" textAlignment="JUSTIFY" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="30.0" top="40.0" />
+         </VBox.margin>
+      </Label>
+      <Label styleClass="TextoContenido" text="Esta operación se refiere a la unión de elementos tanto terminales como no terminales, uno seguido de otro.&#10;&#10;Ejemplo:&#10;&#10;Se tienen dos elementos terminales: A y B. La regla es que después de A debe continuar B. La estructura que representa esta regla sería colocar el punto de entrada, que representa el inicio del diagrama, a continuación el elemento terminal A, una flecha que indica el flujo que debe seguirse, el elemento terminal B y el punto de salida. El diagrama de sintaxis resultante sería el que se muestra en la siguiente animación, mostrando también la evaluación de una cadena que cumple con la regla:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <WebView fx:id="yuxtaposicion" prefHeight="261.0" prefWidth="562.0" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <Label prefHeight="34.0" prefWidth="605.0" styleClass="Subtitulo" text="Opción" textAlignment="JUSTIFY" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="30.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label styleClass="TextoContenido" text="Esta operación se usa para elegir una entre dos o más opciones.&#10;&#10;Ejemplo:&#10;&#10;Se tienen dos elementos terminales: A y B. La regla es que se acepta tanto A como B. La estructura del diagrama quedaría de esta manera: primero el punto de entrada dirigido hacia el elemento terminal A, del mismo punto se desprende otra flecha apuntando hacia el elemento terminal B, lo que indica que al iniciar existen dos posibles caminos, y estos se unen en el punto de salida. &#10;&#10;El diagrama de sintaxis resultante sería el que se muestra en la siguiente animación, mostrando también la evaluación de las cadenas que cumplen con la regla:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <WebView fx:id="opcion1" prefHeight="271.0" prefWidth="569.0" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <Label styleClass="TextoContenido" text="Esta operación se puede utilizar también cuando una cadena es opcional. Como ejemplo supongamos que tenemos un elemento terminal B, la regla dice que este elemento puede ir o no. Entonces el diagrama de sintaxis sería similar al anterior con la diferencia que uno de los caminos del diagrama está vacío, indicando que una cadena vacía es aceptada. A continuación se muestra el diagrama que representa el ejemplo:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <WebView fx:id="opcion2" prefHeight="271.0" prefWidth="561.0" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <Label prefHeight="34.0" prefWidth="605.0" styleClass="Subtitulo" text="Repetir" textAlignment="JUSTIFY" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="30.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label styleClass="TextoContenido" text="La operación repetir se utiliza para representar que un elemento puede repetirse indefinidamente.&#10;&#10;Por ejemplo, si tenemos un elemento terminal B y la regla dice que este se acepta una o más veces, el diagrama comienza con el punto de entrada, en seguida  el elemento terminal B y el punto de salida, pero antes se desprende una flecha hacia el punto de origen, indicando que después de B, puede retornar al inicio y aceptar nuevamente B. En la siguiente animación se muestra dicho diagrama:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <WebView fx:id="repetir1mas" prefHeight="271.0" prefWidth="562.0" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <Region prefHeight="44.0" prefWidth="608.0" />
+      <Label styleClass="TextoContenido" text="Tomando el ejemplo anterior con la variante de que el elemento B puede repetirse cero o más veces, es decir, se acepta una cadena vacía, el diagrama sería el que se muestra a continuación:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <WebView fx:id="repetir1" prefHeight="271.0" prefWidth="563.0" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="85.0" fitWidth="707.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/operaciones.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin></Separator>
+      <HBox prefHeight="53.0" prefWidth="525.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#regresarIndice" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/indice.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Inicio" />
+               </tooltip>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#guardarPDF" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Guardar en PDF" />
+               </tooltip>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Diagramas2" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Diagramas de sintaxis" />
+               </tooltip>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Construccion2" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Construcción de un&#10;diagrama de sintaxis" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+   </padding>
+</VBox>

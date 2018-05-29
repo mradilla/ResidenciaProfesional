@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="620.0" prefWidth="1070.0" stylesheets="@../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_II.InterfazAnalizadorLexicoController">
+         <bottom>
+      <HBox layoutX="11.0" layoutY="3.0" styleClass="gradiente">
+         <children>
+                  <Label layoutX="11.0" layoutY="3.0" text="Instituto Tecnológico de Chilpancingo" textFill="WHITE">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Label>
+            <Region HBox.hgrow="ALWAYS" />
+                  <Label layoutX="337.0" layoutY="3.0" text="Lenguajes y Autómatas II" textFill="WHITE" />
+            <Region layoutX="210.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                  <Label layoutX="578.0" layoutY="3.0" text="Ingeniería en Sistemas Computacionales" textFill="WHITE">
+               <padding>
+                  <Insets right="20.0" />
+               </padding></Label>
+         </children>
+      </HBox>
+         </bottom>
+         <right>
+            <Pane prefHeight="415.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+      <StackPane fx:id="stackpane">
+         <children>
+            <AnchorPane>
+               <children>
+                        <ScrollPane fx:id="cajaContenido" fitToWidth="true" layoutX="-2.0" prefWidth="844.0" style="-fx-background-color: white;" styleClass="CajaContenido" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+         </center>
+   <left>
+      <VBox prefHeight="477.0" prefWidth="226.0" styleClass="CajaModulos" BorderPane.alignment="CENTER">
+         <children>
+            <Separator opacity="0.07" prefWidth="200.0" />
+            <JFXButton fx:id="btnExplicacion" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="16.0" onAction="#cargarExplicacion" prefHeight="57.0" prefWidth="226.0" styleClass="BotonSubmodulo" text="Explicación">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
+                     <image>
+                        <Image url="@../Imagenes/explicacion.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0782bd" />
+                        <Stop color="#0782bd" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="197.0" opacity="0.07" prefWidth="200.0" />
+            <JFXButton fx:id="btnAlgoritmo" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="13.0" onAction="#cargarEjemplos" prefHeight="57.0" prefWidth="226.0" styleClass="BotonSubmodulo" text="Algoritmo">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
+                     <image>
+                        <Image url="@../Imagenes/ejemplos.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0782bd" />
+                        <Stop color="#0782bd" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="262.0" opacity="0.07" prefWidth="200.0" />
+            <JFXButton fx:id="btnEvaluacion" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="79.0" onAction="#cargarExamen" prefHeight="57.0" prefWidth="226.0" styleClass="BotonSubmodulo" text="Examen">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
+                     <image>
+                        <Image url="@../Imagenes/examen.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0782bd" />
+                        <Stop color="#0782bd" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="64.0" opacity="0.07" prefWidth="200.0" />
+            <JFXButton fx:id="btnLexicon" alignment="BASELINE_LEFT" onAction="#cargarLexicon" prefHeight="57.0" prefWidth="226.0" styleClass="BotonSubmodulo" text="Lexicon">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
+                     <image>
+                        <Image url="@../Imagenes/lexicon.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0782bd" />
+                        <Stop color="#0782bd" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Separator opacity="0.07" prefWidth="200.0" />
+            <JFXButton fx:id="btnExportar" alignment="BASELINE_LEFT" onAction="#cargarExportar" prefHeight="57.0" prefWidth="226.0" styleClass="BotonSubmodulo" text="Exportar">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
+                     <image>
+                        <Image url="@../Imagenes/code%20file.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0782bd" />
+                        <Stop color="#0782bd" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Separator opacity="0.07" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <VBox prefHeight="44.0" prefWidth="800.0">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="800.0" styleClass="CajaModulos" BorderPane.alignment="CENTER" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXButton id="principal" fx:id="btnInicio" alignment="BASELINE_LEFT" onAction="#regresarInicio" prefHeight="63.0" prefWidth="226.0" styleClass="BotonSubmodulo" text="Inicio" textFill="#0782bd">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
+                           <image>
+                              <Image url="@../Imagenes/Home.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="20.0" left="60.0" right="20.0" top="20.0" />
+                     </padding>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#0782bd" />
+                              <Stop color="#0782bd" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                  </JFXButton>
+                  <VBox styleClass="gradiente" HBox.hgrow="ALWAYS">
+                     <children>
+                        <StackPane id="transp" prefHeight="35.0" prefWidth="810.0" styleClass="tituloSubmodulo">
+                           <children>
+                              <Label styleClass="letraGradienteAzul" text="Lenguajes y Autómatas II" textFill="#0782bd" />
+                           </children>
+                        </StackPane>
+                        <HBox id="transp" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Region id="transp" HBox.hgrow="ALWAYS" />
+                              <Label id="transp" alignment="CENTER" prefHeight="25.0" prefWidth="344.0" styleClass="tituloSubmodulo" text="Analizador Léxico Recursivo" />
+                              <Region id="transp" layoutX="240.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+      </BorderPane>

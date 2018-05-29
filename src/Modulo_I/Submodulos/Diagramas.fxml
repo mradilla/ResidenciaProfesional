@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="1834.0" prefWidth="841.0" style="-fx-background-color: white;" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_I.Submodulos.DiagramasController">
+   <children>
+      <Label styleClass="Indice1" text="Diagramas de sintaxis" />
+      <Separator prefHeight="17.0" prefWidth="747.0" />
+      <Label styleClass="TextoContenido" text="Son una herramienta gráfica para describir la  sintaxis de un lenguaje. También llamados diagramas de Conway. Estos diagramas serán la herramienta principal para desarrollar las primeras etapas de un compilador, estos se generan a partir de una gramática. &#10;&#10;Por ejemplo, retomando la producción de una instrucción if - else en Java, sabemos que los símbolos terminales son las palabras if, else y los paréntesis y que los símbolos no terminales son expresión e instrucción." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="139.0" fitWidth="581.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/ins.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label styleClass="TextoContenido" text="Los símbolos terminales (tokens) se dibujan como círculos etiquetadas con el nombre del token:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label layoutX="80.0" layoutY="249.0" styleClass="TextoContenido" textAlignment="JUSTIFY" wrapText="true" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="121.0" fitWidth="460.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/circulo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label layoutX="80.0" layoutY="234.0" styleClass="TextoContenido" text="Los símbolos no terminales se dibujan como rectángulos etiquetados con su nombre correspondiente." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="107.0" fitWidth="393.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/rectangulo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label layoutX="80.0" layoutY="272.0" styleClass="TextoContenido" text="Todo diagrama de sintaxis posee un punto de entrada (generalmente situado a la izquierda) y un punto de salida (generalmente situado a la derecha), y están representados por una flecha sin origen y una flecha sin destino respectivamente." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox layoutX="80.0" layoutY="489.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="46.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/e_flecha.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label layoutX="80.0" layoutY="823.0" styleClass="TextoContenido" text="Esta flecha también se usa para relacionar cada uno de los elementos del diagrama, tanto terminales como no terminales, de lo cual se hablará más adelante." textAlignment="JUSTIFY" wrapText="true" />
+      <Label styleClass="TextoContenido" text="En la siguiente animación se muestra un ejemplo de diagrama de sintaxis, en el cual se indican cada uno de los elementos que lo conforman." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="404.0" prefWidth="560.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <WebView fx:id="elementos" prefHeight="375.0" prefWidth="473.0">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin></WebView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="104.0" fitWidth="701.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/nota1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Separator prefHeight="17.0" prefWidth="747.0">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Separator>
+      <HBox prefHeight="53.0" prefWidth="525.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#regresarIndice" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/indice.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Inicio" />
+               </tooltip>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#guardarPDF" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Guardar en PDF" />
+               </tooltip>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Gramatica2" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Gramatica" />
+               </tooltip>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Operaciones2" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Operaciones con diagramas &#10;de sintaxis" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+   </padding>
+</VBox>

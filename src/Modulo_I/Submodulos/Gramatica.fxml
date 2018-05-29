@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="1403.0" prefWidth="887.0" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_I.Submodulos.ExplicacionController">
+   <children>
+      <Label styleClass="Indice1" text="Gramática" />
+      <Separator prefHeight="17.0" prefWidth="747.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Separator>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="La gramática es una forma compacta de representar un lenguaje, describe en forma natural la estructura jerárquica de la mayoría de las instrucciones." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="135.0" style="-fx-background-color: white;" styleClass="TextoContenido" text="Por ejemplo, una instrucción if - else en Java tiene la siguiente estructura:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="219.0" prefWidth="560.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="152.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/if.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="Es decir, la instrucción if - else es la concatenación de la palabra reservada if, un paréntesis abierto, una expresión, un paréntesis cerrado, una instrucción, la palabra reservada else y otra instrucción. Debido a que la estructura if - else es considerada una instrucción, esta regla de estructuración puede expresarse de la siguiente manera:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="71.0" fitWidth="623.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/ins.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="A esta regla se le llama producción. En donde la flecha se lee &quot;puede tener la forma...&quot;. &#10;&#10;En una producción, los elementos lexicos como las palabras reservadas if, else y los paréntesis se le llaman terminales.&#10;&#10;Las variables como expresión e instrucción se llaman no terminales y estan formados por secuencias de terminales." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label id="negrita" styleClass="TextoContenido" text="En conclusión, una gramática está conformada por cuatro componentes:" textAlignment="JUSTIFY" wrapText="true">
+         <VBox.margin>
+            <Insets top="70.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="279.0" fitWidth="697.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/gramatica.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Separator prefHeight="17.0" prefWidth="747.0" />
+      <HBox prefHeight="53.0" prefWidth="525.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#regresarIndice" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/indice.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Inicio" />
+               </tooltip>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#guardarPDF" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Guardar en PDF" />
+               </tooltip>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Diagramas2" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Diagramas de sintaxis" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+   </padding>
+</VBox>

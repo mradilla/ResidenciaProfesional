@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="1384.0" prefWidth="793.0" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_II.Submodulos.ProcesadoresController">
+   <children>
+      <Label styleClass="Indice1" text="Procesadores de lenguaje" VBox.vgrow="ALWAYS" />
+      <Separator prefWidth="200.0" />
+      <Label styleClass="Indice2" text="Compilador" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="Un compilador es un programa que lee otro programa en un lenguaje (lenguaje fuente) y lo traduce en un programa equivalente pero en otro lenguaje (lenguaje destino)." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox fillHeight="false" VBox.vgrow="ALWAYS">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <WebView fx:id="compilador" prefHeight="278.0" prefWidth="661.0" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="Una vez que se tiene el programa en lenguaje máquina el usuario puede ejecutarlo para procesar las entradas y producir salidas." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="Una función importante del compilador es reportar cualquier error en el programa fuente que detecte durante el proceso de traducción." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label styleClass="Indice2" text="Intérprete" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin></Label>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="Este tipo de procesador, en lugar de producir un program destino como una traducción, éste aparenta ejecutar directamente las acciones especificadas en el programa fuente." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox fillHeight="false">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <WebView fx:id="interprete" prefHeight="278.0" prefWidth="661.0" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="El programa destino en lenguaje máquina que produce un compilador es, por lo general, más rápido que un intérprete al momento de asignar las entradas a las salidas. No obstante, por lo regular, el intérprete puede ofrecer mejores diagnósticos de error que un compilador, ya que ejecuta el programa fuente instrucción por instrucción." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="10.0" top="30.0" />
+         </VBox.margin>
+      </Separator>
+      <HBox prefHeight="53.0" prefWidth="525.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#regresarIndice" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/indice.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Inicio" />
+               </tooltip>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#guardarPDF" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Guardar en PDF" />
+               </tooltip>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="siguiente" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#siguiente" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Estructura de un compilador" />
+               </tooltip>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+   </padding>
+</VBox>

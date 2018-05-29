@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="blanco" fx:id="cajaExamen" style="-fx-background-color: white;" styleClass="CajaContenido" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_I.Submodulos.InicioEvaluacionController">
+   <children>
+      <HBox>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label layoutX="187.0" layoutY="68.0" styleClass="Indice1" text="EXAMEN" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets top="70.0" />
+         </VBox.margin>
+      </HBox>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets left="70.0" right="70.0" top="10.0" />
+         </VBox.margin>
+      </Separator>
+      <AnchorPane prefHeight="441.0" prefWidth="556.0">
+         <children>
+            <HBox layoutX="111.0" layoutY="57.0" prefHeight="227.0" prefWidth="416.0" styleClass="TextoContenido" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label layoutX="187.0" layoutY="68.0" styleClass="TextoContenido" text="De acuerdo a lo explicado en los submódulos anteriores, se presenta un examen con el fin de reforzar lo aprendido respecto al tema diagramas de sintaxis.&#10;&#10;El examen consiste en 10 preguntas de opción múltiple, no hay límite de tiempo y una vez iniciado no podrás acceder al contenido de los otros submódulos." textAlignment="JUSTIFY" wrapText="true" HBox.hgrow="ALWAYS" />
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox layoutX="225.0" layoutY="239.0" prefHeight="143.0" prefWidth="416.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="180.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <JFXButton buttonType="RAISED" layoutX="225.0" layoutY="239.0" onAction="#CargarExamen" prefHeight="38.0" prefWidth="163.0" styleClass="boton1" text="Iniciar Examen">
+                     <tooltip>
+                        <Tooltip autoHide="true" text="Haga clic para iniciar el examen" textAlignment="CENTER" />
+                     </tooltip>
+                  </JFXButton>
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets left="70.0" right="70.0" top="20.0" />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>

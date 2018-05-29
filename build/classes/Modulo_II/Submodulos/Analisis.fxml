@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="blanco" style="-fx-background-color: white;" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_II.Submodulos.ExplicacionController">
+   <children>
+      <Label styleClass="Indice1" text="Análisis sintáctico" />
+      <Separator prefWidth="200.0" />
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="Es la fase del analizador que se encarga de chequear la secuencia de tokens que representa al texto de entrada, en base a una gramática dada. &#10;&#10;&#10;En caso de que el programa de entrada sea válido, suministra el árbol sintáctico que lo reconoce en base a una representación computacional. Este árbol es el punto de partida de la fase posterior de la etapa de análisis: el analizador semántico.&#10;&#10;&#10;Pero esto es la teoría; en la práctica, el analizador sintáctico dirige el proceso de compilación, de manera que el resto de fases evolucionan a medida que el sintáctico va reconociendo la secuencia de entrada por lo que, a menudo, el árbol ni siquiera se genera realmente. &#10;&#10;&#10;En la práctica, el analizador sintáctico también: &#10;&#10;&#10;       • Incorpora acciones semánticas en las que colocar el resto de fases del compilador (excepto el analizador léxico): desde el análisis semántico hasta la generación de código. Informa de la naturaleza de los errores sintácticos que encuentra e intenta recuperarse de ellos para continuar la compilación. &#10;&#10;&#10;       • Controla el flujo de tokens reconocidos por parte del analizador léxico. En definitiva, realiza casi todas las operaciones de la compilación, dando lugar a un método de trabajo denominado compilación dirigida por sintaxis.&#10;" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label styleClass="Indice2" text="Tipos de análisis sintáctico">
+         <VBox.margin>
+            <Insets bottom="30.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label style="-fx-background-color: white;" styleClass="TextoContenido" text="Según la aproximación que se tome para construir el árbol sintáctico se desprenden dos tipos o clases de analizadores:&#10;&#10;&#10;Descendentes: parten del axioma inicial, y van efectuando derivaciones a izquierda hasta obtener la secuencia de derivaciones que reconoce a la sentencia. Pueden ser: &#10;&#10;            • Con retroceso. &#10;&#10;            • Con funciones recursivas. &#10;&#10;            • De gramáticas LL.&#10;&#10;&#10;&#10;Ascendentes: Parten de la sentencia de entrada, y van aplicando derivaciones inversas (desde el consecuente hasta el antecedente), hasta llegar al axioma inicial. Pueden ser: &#10;&#10;            • Con retroceso. &#10;            &#10;            • De gramáticas LR.&#10;" textAlignment="JUSTIFY" wrapText="true" />
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Separator>
+      <HBox prefHeight="53.0" prefWidth="525.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#regresarIndice" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/indice.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Inicio" />
+               </tooltip>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#guardarPDF" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Guardar en PDF" />
+               </tooltip>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#estructura2" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <tooltip>
+                  <Tooltip text="Estructura de un compilador" />
+               </tooltip>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#recursivas2" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Análisis sintáctico con &#10;funciones recursivas" />
+               </tooltip>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1116.0" prefWidth="1112.0" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_II.Submodulos.LexiconController">
+    <children>
+        <Label styleClass="Indice1" text="Lexicon">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Separator prefWidth="200.0" />
+        <Label styleClass="TextoContenido" text="En este submódulo puedes ingresar una cadena y visualizar la evaluación que realiza el analizador para determinar si esta es correcta o no." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="30.0" top="30.0" />
+            </VBox.margin>
+        </Label>
+        <Label styleClass="negrita" text="Ingresa la cadena:" />
+        <HBox prefHeight="125.0" prefWidth="589.0">
+            <children>
+                <JFXTextArea id="negrita" fx:id="area" prefHeight="125.0" prefWidth="441.0" promptText="a = b + (4*6);&#10;" styleClass="AreaTexto" wrapText="true">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+               
+                    <cursor>
+                        <Cursor fx:constant="TEXT" />
+                    </cursor>
+             
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </JFXTextArea>
+                <JFXButton buttonType="RAISED" onAction="#analizar" prefHeight="32.0" prefWidth="109.0" styleClass="boton1" text="Analizar">
+               <HBox.margin>
+                  <Insets left="60.0" top="45.0" />
+               </HBox.margin></JFXButton>
+            </children>
+          
+        </HBox>
+        <Label styleClass="Indice2" text="Evaluación:">
+            <VBox.margin>
+                <Insets top="40.0" />
+            </VBox.margin>
+        </Label>
+        <Separator prefWidth="200.0">
+            <VBox.margin>
+                <Insets bottom="30.0" />
+            </VBox.margin>
+        </Separator>
+      <HBox prefHeight="58.0" prefWidth="972.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <JFXButton fx:id="btnInicio" buttonType="RAISED" onAction="#inicio" styleClass="boton1" text="Inicio">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnAnterior" buttonType="RAISED" onAction="#atras" styleClass="boton1" text="Anterior">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnSiguiente" buttonType="RAISED" onAction="#adelante" styleClass="boton1" text="Siguiente">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+        <HBox>
+            <children>
+                <ImageView fx:id="imagen" fitHeight="400.0" fitWidth="729.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets right="40.0" />
+                    </HBox.margin>
+                </ImageView>
+                <VBox layoutX="347.0" AnchorPane.rightAnchor="10.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="200.0" styleClass="negrita" text="Token actual">
+                            <VBox.margin>
+                                <Insets bottom="5.0" />
+                            </VBox.margin>
+                        </Label>
+                        <JFXListView id="cursorNormal" fx:id="listatokens" focusTraversable="false" prefWidth="200.0" style="-fx-background-color: #DDDDDD;" styleClass="Indice3" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+      <HBox prefHeight="43.0" prefWidth="972.0">
+         <children>
+            <Label fx:id="resultado" styleClass="Indice2" />
+         </children>
+      </HBox>
+    </children>
+    <padding>
+        <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+    </padding>
+</VBox>

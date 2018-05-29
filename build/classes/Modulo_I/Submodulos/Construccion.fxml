@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="1493.0" prefWidth="841.0" style="-fx-background-color: white;" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_I.Submodulos.ConstruccionController">
+   <children>
+      <Label styleClass="Indice1" text="Construcción de un diagrama de sintaxis" />
+      <Separator prefHeight="17.0" prefWidth="747.0" />
+      <Label layoutX="80.0" layoutY="301.0" styleClass="TextoContenido" text="Una vez comprendidas las operaciones que se pueden representar con los diagramas de sintaxis ya es posible generar nuestros propios diagramas.&#10;&#10;Como ejemplo, se realizará el diagrama de sintaxis de una instrucción if - else en Java:&#10;" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label styleClass="TextoContenido" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="154.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/if.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label styleClass="TextoContenido" text="Recordemos que ya habíamos identificado los elementos terminales y no terminales de esta instrucción:&#10;&#10;Elementos terminales:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Label layoutX="80.0" layoutY="249.0" styleClass="TextoContenido" textAlignment="JUSTIFY" wrapText="true" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="121.0" fitWidth="460.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/circulo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label layoutX="80.0" layoutY="234.0" styleClass="TextoContenido" text="Elementos no terminales:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="107.0" fitWidth="393.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/rectangulo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label layoutX="80.0" layoutY="272.0" styleClass="TextoContenido" text="Como se mencionó anteriormente, esta instrucción está compuesta por la concatenación de sus elementos, por lo tanto es necesaria la operación de yuxtaposición. El diagrama resultante sería:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox layoutX="80.0" layoutY="489.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="58.0" fitWidth="693.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/construccion1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label layoutX="80.0" layoutY="823.0" styleClass="TextoContenido" text="Y si se toma en cuenta que la cláusula else no es necesaria, se utiliza la operación de opción, resultando el siguiente diagrama:" textAlignment="JUSTIFY" wrapText="true" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="158.0" fitWidth="694.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/construccion2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label styleClass="TextoContenido" text="Como se observa, hay un punto de salida después del símbolo no terminal Instrucción, lo que indica si la evaluación termina ahí es válida, pero también lo es si existe la cláusula else." textAlignment="JUSTIFY" wrapText="true">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Separator prefHeight="17.0" prefWidth="747.0">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Separator>
+      <HBox prefHeight="53.0" prefWidth="525.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#regresarIndice" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/indice.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Inicio" />
+               </tooltip>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#guardarPDF" style="-fx-background-color: transparent;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Imagenes/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Guardar en PDF" />
+               </tooltip>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Operaciones2" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../../Imagenes/flecha.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <tooltip>
+                  <Tooltip text="Operaciones con &#10;diagramas de sintaxis" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+   </padding>
+</VBox>

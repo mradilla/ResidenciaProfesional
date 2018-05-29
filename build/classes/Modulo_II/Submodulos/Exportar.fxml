@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="blanco" fx:id="cajaExamen" style="-fx-background-color: white;" styleClass="CajaContenido" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_II.Submodulos.ExportarController">
+   <children>
+      <AnchorPane prefHeight="296.0" prefWidth="556.0">
+         <children>
+            <HBox layoutX="70.0" layoutY="14.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label layoutX="187.0" layoutY="68.0" styleClass="Indice1" text="Exportar analizador léxico" />
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox layoutX="111.0" layoutY="57.0" prefHeight="109.0" prefWidth="176.0" styleClass="TextoContenido" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label layoutX="187.0" layoutY="68.0" styleClass="TextoContenido" text="En este submódulo puedes exportar el código del analizador lexico que se explicó en esta aplicación. Elige el lenguaje en que deseas exportar:" textAlignment="JUSTIFY" wrapText="true" HBox.hgrow="ALWAYS" />
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox layoutX="225.0" layoutY="239.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="250.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <JFXButton id="negrita" buttonType="RAISED" contentDisplay="TOP" layoutX="225.0" layoutY="239.0" onAction="#exportarJava" prefHeight="156.0" prefWidth="128.0" styleClass="BotonSubmodulo" text="JAVA">
+                     <tooltip>
+                        <Tooltip autoHide="true" text="Haga clic para exportar en Java" textAlignment="CENTER" />
+                     </tooltip>
+                     <graphic>
+                        <ImageView fitHeight="93.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Imagenes/java.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#0782bd" />
+                              <Stop color="#0782bd" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                  </JFXButton>
+                  <Region prefWidth="170.0" HBox.hgrow="NEVER" />
+                  <JFXButton id="negrita" buttonType="RAISED" contentDisplay="TOP" onAction="#exportarC" prefHeight="157.0" prefWidth="133.0" styleClass="BotonSubmodulo" text="C++">
+                     <tooltip>
+                        <Tooltip autoHide="true" text="Haga clic para exportar en C++" textAlignment="CENTER" />
+                     </tooltip>
+                     <graphic>
+                        <ImageView fitHeight="90.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Imagenes/c++.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#0782bd" />
+                              <Stop color="#0782bd" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                  </JFXButton>
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets left="70.0" right="70.0" top="70.0" />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>

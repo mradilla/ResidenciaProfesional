@@ -1,0 +1,76 @@
+<?xml version = "1.0"?>
+<preguntas>
+
+    <Pregunta texto = "Es un programa que lee otro programa en un lenguaje fuente y lo traduce en un programa equivalente en el lenguaje destino:">
+        <respuesta >Intérprete</respuesta>
+        <respuesta tipo = "Correcta">Compilador</respuesta>
+        <respuesta >Analizador</respuesta>
+    </Pregunta>
+
+    <Pregunta texto = "Son descripciones de las sentencias de los lenguajes, establecen la estructura que deben tener las sentencias para que estén bien formadas y para que pueda entenderse su significado:">
+        <respuesta tipo = "Correcta">Gramáticas</respuesta>
+        <respuesta>Diagrama</respuesta>
+        <respuesta>Examen</respuesta>
+    </Pregunta>
+
+    <Pregunta texto = "¿Qué debe reportar el compilador al realizar su función?:">
+        <respuesta tipo = "Correcta">Errores encontrados</respuesta>
+        <respuesta>Entradas</respuesta>
+        <respuesta>Salidas</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Son los dos procesos principales de un compilador:">
+        <respuesta tipo = "Correcta">Análisis y síntesis</respuesta>
+        <respuesta>Desarrollo y salidas</respuesta>
+        <respuesta>Entradas y análisis</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Es el proceso del compilador que divide el programa fuente en componentes:">
+        <respuesta tipo = "Correcta">Análisis</respuesta>
+        <respuesta>Síntesis</respuesta>
+        <respuesta>Preprocesador</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Recolecta información sobre el programa fuente y la almacena en una tabla de símbolos:">
+              <respuesta tipo = "Correcta">Análisis</respuesta>
+        <respuesta>Síntesis</respuesta>
+        <respuesta>Preprocesador</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Construye el programa destino a partir de la información de la tabla de símbolos:">
+        <respuesta tipo = "Correcta">Síntesis</respuesta>
+        <respuesta>Análisis</respuesta>
+        <respuesta>Optimizador</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Es conocido como el front-end de un compilador:">
+        <respuesta tipo = "Correcta">Análisis</respuesta>
+        <respuesta>Síntesis</respuesta>
+        <respuesta>Generador de código</respuesta>
+    </Pregunta>
+    <Pregunta texto = "Es conocido como el back-end de un compilador:">
+        <respuesta tipo = "Correcta">Síntesis</respuesta>
+        <respuesta>Análisis</respuesta>
+        <respuesta>Generador de código</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Es la fase del analizador que se encarga de chequear la secuencia de tokens que representa al texto de entrada:">
+        <respuesta tipo = "Correcta">Análisis sintáctico</respuesta>
+        <respuesta>Análisis semántico</respuesta>
+        <respuesta>Optimizador de código</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Es un tipo de análisis sintáctico descendente:">
+        <respuesta tipo = "Correcta">Funciones recursivas</respuesta>
+        <respuesta>Con retroceso</respuesta>
+        <respuesta>De gramáticas LR</respuesta>
+    </Pregunta>
+  
+</preguntas>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="blanco" fx:id="anchor" style="-fx-background-color: white;" styleClass="CajaContenido" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_I.Submodulos.ExplicacionController">
+   <children>
+      <Label styleClass="Indice1" text="Contenido">
+         <VBox.margin>
+            <Insets bottom="10.0" left="70.0" right="70.0" top="70.0" />
+         </VBox.margin>
+      </Label>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets left="70.0" right="70.0" />
+         </VBox.margin>
+      </Separator>
+      <Label styleClass="TextoContenido" text="Este módulo aborda el tema diagramas de sintaxis, desde la teoría hasta la construcción y programación de ellos, incluyendo algunos ejemplos y un examen, donde el alumno podrá comprobar si realmente comprendió el tema mediante preguntas de opción múltiple.&#10;&#10;Puedes acceder a los submódulos con las opciones del lado izquierdo o ver el contenido teórico seleccionandolo el tema de interés en el siguiente listado." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="20.0" left="70.0" right="70.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets left="70.0" right="70.0" />
+         </VBox.margin>
+      </Separator>
+      <Accordion fx:id="menu" focusTraversable="false" prefHeight="347.0" prefWidth="2199.0" styleClass="Indice1">
+         <panes>
+            <TitledPane fx:id="indice" expanded="false" prefHeight="331.0" prefWidth="1117.0" styleClass="Indice1" text="Temas ">
+               <content>
+                  <VBox prefHeight="311.0" prefWidth="1115.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#gramatica" styleClass="Indice2" text="Gramática">
+                           <padding>
+                              <Insets bottom="20.0" left="50.0" top="20.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#diagramas" styleClass="Indice2" text="Diagramas de sintaxis">
+                           <padding>
+                              <Insets bottom="20.0" left="50.0" top="20.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Accordion>
+                           <panes>
+                              <TitledPane expanded="false">
+                                 <content>
+                                    <VBox layoutX="76.0" layoutY="14.0">
+                                       <children>
+                                          <Button fx:id="compilador" layoutX="48.0" layoutY="14.0" mnemonicParsing="false" onAction="#operaciones" styleClass="Indice3" text="Yuxtaposición" AnchorPane.leftAnchor="60.0">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                          <Button fx:id="interprete" mnemonicParsing="false" onAction="#operaciones" styleClass="Indice3" text="Opción">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                          <Button fx:id="interprete2" mnemonicParsing="false" onAction="#operaciones" styleClass="Indice3" text="Repetir">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Button>
+                                       </children>
+                                       <padding>
+                                          <Insets left="70.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                                 <graphic>
+                                    <Button mnemonicParsing="false" onAction="#operaciones" styleClass="Indice2" text="Operaciones con diagramas de sintaxis">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></Button>
+                                 </graphic>
+                              </TitledPane>
+                           </panes>
+                        </Accordion>
+                        <Accordion />
+                        <Button mnemonicParsing="false" onAction="#construccion" styleClass="Indice2" text="Construcción de un diagrama de sintaxis">
+                           <padding>
+                              <Insets bottom="20.0" left="50.0" top="20.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </TitledPane>
+         </panes>
+         <VBox.margin>
+            <Insets bottom="10.0" left="70.0" right="70.0" top="70.0" />
+         </VBox.margin>
+      </Accordion>
+   </children>
+</VBox>

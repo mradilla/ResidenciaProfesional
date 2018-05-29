@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minWidth="1087.0" prefWidth="1087.0" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_II.Submodulos.EjemplosController">
+   <children>
+      <Label styleClass="Indice1" text="Algoritmo">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Separator prefWidth="200.0" />
+      <Label styleClass="TextoContenido" text="La siguiente animación presenta el algoritmo correspondiente para cada diagrama de sintaxis necesario para desarrollar el compilador para expresiones matemáticas separadas por punto y coma:" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="30.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="628.0" prefWidth="589.0">
+         <children>
+            <WebView fx:id="wb" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="628.0" prefWidth="947.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+   </padding>
+</VBox>

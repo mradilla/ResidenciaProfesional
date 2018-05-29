@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minWidth="1087.0" prefWidth="1100.0" stylesheets="@../../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modulo_I.Submodulos.EjemplosController">
+   <children>
+      <Label styleClass="Indice1" text="Ejemplos">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Separator>
+      <Label styleClass="TextoContenido" text="En la siguiente animación se presentan algunos ejemplos de diagramas de sintaxis, los cuales están relacionados entre si, representando una gramática de expresiones matemáticas separadas cada una por punto y coma. &#10;&#10;Puedes ingresar al diagrama que desees seleccionandolo y una vez que hayas ingresado tienes las opciones de navegar entre las escenas de este mediante los botones de la parte inferior o regresar al menú." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="30.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="628.0" prefWidth="589.0">
+         <children>
+            <WebView fx:id="wb" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="617.0" prefWidth="960.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Separator prefWidth="200.0" />
+   </children>
+   <padding>
+      <Insets bottom="70.0" left="70.0" right="70.0" top="70.0" />
+   </padding>
+</VBox>

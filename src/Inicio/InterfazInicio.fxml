@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@../Estilo/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inicio.InterfazInicioController">
+   <top>
+      <StackPane prefHeight="109.0" prefWidth="600.0" style="-fx-background-color: #0782bd;">
+         <children>
+            <Label id="cursorNormal" layoutX="96.0" layoutY="27.0" text="Instituto Tecnológico de Chilpancingo&#10;Ingeniería en Sistemas Computacionales&#10;" textAlignment="CENTER" textFill="#222222">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+         </children>
+      </StackPane>
+   </top>
+   <bottom>
+      <Pane prefHeight="27.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <StackPane fx:id="stack" layoutX="126.0" layoutY="136.0" prefHeight="537.0" prefWidth="699.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="501.0" prefWidth="559.0" StackPane.alignment="TOP_CENTER">
+               <children>
+                  <Label styleClass="Indice1" text="Lenguajes y Autómatas II">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label styleClass="TextoContenido" text="En el plan de estudios de esta materia se indica que esta busca proveer al estudiante de herramientas, conocimientos y habilidades necesarias para desarrollar un compilador. Para tal objetivo es necesario comprender dos temas fundamentales: diagramas de sintaxis y analizador léxico recursivo, los cuales se abordan en esta aplicación  mediante contenido interactivo." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="65.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <Group>
+                     <children>
+                        <Pane layoutX="17.0" layoutY="25.0" prefHeight="164.0" prefWidth="162.0" styleClass="panelInicio">
+                           <children>
+                              <ImageView fitHeight="46.0" fitWidth="133.0" layoutX="19.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Imagenes/diagrama_secuencia_w.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="109.0" prefHeight="44.0" prefWidth="168.0" scaleX="1.1" styleClass="boton1" text="Diagramas de sintaxis" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Tahoma" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="-5.0" onAction="#btnDiagramasSintaxis" opacity="0.0" prefHeight="165.0" prefWidth="170.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <tooltip>
+                                    <Tooltip text="Haga clic para ingresar al módulo&#10;diagramas de sintaxis" />
+                                 </tooltip>
+                              </JFXButton>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <effect>
+                              <DropShadow blurType="GAUSSIAN" height="20.0" radius="9.5" width="20.0" />
+                           </effect>
+                        </Pane>
+                        <Pane layoutX="370.0" layoutY="25.0" prefHeight="164.0" prefWidth="162.0" styleClass="panelInicio">
+                           <children>
+                              <ImageView fitHeight="79.0" fitWidth="87.0" layoutX="41.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Imagenes/code_file.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-12.0" layoutY="109.0" prefHeight="44.0" prefWidth="186.0" styleClass="boton1" text="Analizador Léxico&#10;Recursivo" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="-3.0" layoutY="-2.0" onAction="#btnAnalizadorLexico" opacity="0.0" prefHeight="165.0" prefWidth="170.0" text="Button">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <tooltip>
+                                    <Tooltip text="Haga clic para ingresar al módulo&#10;Analizador Léxico Recursivo" />
+                                 </tooltip>
+                              </JFXButton>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <effect>
+                              <DropShadow blurType="GAUSSIAN" height="20.0" radius="9.5" width="20.0" />
+                           </effect>
+                        </Pane>
+                     </children>
+                  </Group>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="70.0" right="70.0" top="20.0" />
+         </padding>
+      </StackPane>
+   </center>
+</BorderPane>

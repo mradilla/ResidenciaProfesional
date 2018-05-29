@@ -1,0 +1,220 @@
+<?xml version = "1.0"?>
+<preguntas>
+
+    <Pregunta texto = "Es la forma compacta de representar un lenguaje:">
+        <respuesta >Producción</respuesta>
+        <respuesta tipo = "Correcta">Gramática</respuesta>
+        <respuesta >Token</respuesta>
+    </Pregunta>
+
+    <Pregunta texto = "A los elementos léxicos como palabras reservadas o caracteres se les llama:">
+        <respuesta tipo = "Correcta">Terminales</respuesta>
+        <respuesta>No terminales</respuesta>
+        <respuesta>Producciones</respuesta>
+    </Pregunta>
+
+    <Pregunta texto = "La flecha en una producción se lee como:">
+        <respuesta tipo = "Correcta">Puede tener la forma de...</respuesta>
+        <respuesta>Es igual a...</respuesta>
+        <respuesta>Corresponde a...</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Son un elemento de los diagramas de sintaxis que esta formado por secuencias de terminales:">
+        <respuesta tipo = "Correcta">No terminal</respuesta>
+        <respuesta>Token</respuesta>
+        <respuesta>Gramática</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "En un diagrama de sintaxis, a los símbolos terminales también se les conoce como:">
+        <respuesta tipo = "Correcta">Tokens</respuesta>
+        <respuesta>Variables</respuesta>
+        <respuesta>Producciones</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "En un diagrama de sintaxis, a los símbolos no terminales también se les conoce como:">
+        <respuesta tipo = "Correcta">Variables sintácticas</respuesta>
+        <respuesta>Tokens</respuesta>
+        <respuesta>Producciones</respuesta>
+    </Pregunta>
+
+  <Pregunta texto = "Son una herramienta gráfica para describir la sintaxis de un lenguaje:">
+        <respuesta tipo = "Correcta">Diagramas de sintaxis</respuesta>
+        <respuesta>Diagramas de flujo</respuesta>
+        <respuesta>Diagramas de producción</respuesta>
+    </Pregunta>
+
+    
+      <Pregunta texto = "¿Con qué otro nombre se le conoce a los diagramas de sintaxis?">
+        <respuesta tipo = "Correcta">Diagramas de Conway</respuesta>
+        <respuesta>Diagramas léxicos</respuesta>
+        <respuesta>Diagramas de producción</respuesta>
+    </Pregunta>
+    
+    <Pregunta texto = "Son la herramienta principal para desarrollar las primera etapas de un compilador:">
+        <respuesta tipo = "Correcta">Diagramas de sintaxis</respuesta>
+        <respuesta>Producciones</respuesta>
+        <respuesta>Algoritmos</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Los diagramas de sintaxis se generan a partir de:">
+        <respuesta tipo = "Correcta">La gramática de un lenguaje</respuesta>
+        <respuesta>Sólo una sentencia de un lenguaje</respuesta>
+        <respuesta>Las palabras de un lenguaje</respuesta>
+    </Pregunta>
+
+
+  
+    <Pregunta texto = "En un diagrama de sintaxis los símbolos terminales se representan mediante:">
+        <respuesta tipo = "Correcta">Círculos</respuesta>
+        <respuesta>Rectángulos</respuesta>
+        <respuesta>Flechas</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "En un diagrama de sintaxis os símbolos no terminales se representan con:">
+        <respuesta tipo = "Correcta">Rectángulos</respuesta>
+        <respuesta>Círculos</respuesta>
+        <respuesta>Flechas</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "El punto de entrada de un diagrama de sintaxis se representa por:">
+        <respuesta tipo = "Correcta">Una flecha sin origen</respuesta>
+        <respuesta>Una flecha sin destino</respuesta>
+        <respuesta>Una flecha con origen y destino</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "El punto de salida de un diagrama de sintaxis se representa por:">
+        <respuesta tipo = "Correcta">Una flecha sin destino</respuesta>
+        <respuesta>Una flecha sin origen</respuesta>
+        <respuesta>Una flecha con origen y destino</respuesta>
+    </Pregunta>
+
+
+
+    <Pregunta texto = "Cada diagrama de sintaxis representa:">
+        <respuesta tipo = "Correcta">Un elemento no terminal</respuesta>
+        <respuesta>Un elemento terminal</respuesta>
+        <respuesta>Una gramática</respuesta>
+    </Pregunta>
+
+
+
+    <Pregunta texto = "Es la operación que se refiere a la unión de elementos terminales como no terminales, uno seguido de otro:">
+        <respuesta tipo = "Correcta">Yuxtaposición</respuesta>
+        <respuesta>Opción</respuesta>
+        <respuesta>Repetir</respuesta>
+    </Pregunta>
+    
+    <Pregunta texto = "Es la operación que se usa para elegir entre dos o más opciones:">
+        <respuesta tipo = "Correcta">Opción</respuesta>
+        <respuesta>Yuxtaposición</respuesta>
+        <respuesta>Repetir</respuesta>
+    </Pregunta>
+    
+    <Pregunta texto = "Es la operación que representa la repetición indefinida de un elemento del diagrama de sintaxis:">
+        <respuesta tipo = "Correcta">Repetir</respuesta>
+        <respuesta>Opción</respuesta>
+        <respuesta>Yuxtaposición</respuesta>
+    </Pregunta>
+
+
+
+    <Pregunta texto = "Diagrama de sintaxis que representa la operación de Yuxtaposición:">
+        <respuesta tipo = "Correcta">/Imagenes/e_yuxtaposicion.png</respuesta>
+        <respuesta>/Imagenes/e_repetir1.png</respuesta>
+        <respuesta>/Imagenes/e_opcion2.png</respuesta>         
+    </Pregunta>
+
+
+    <Pregunta texto = "Diagrama de sintaxis que representa opción entre una cadena A y otra cadena B:">
+        <respuesta tipo = "Correcta">/Imagenes/e_opcion1.png</respuesta>
+        <respuesta>/Imagenes/e_yuxtaposicion.png</respuesta>
+        <respuesta>/Imagenes/e_opcion2.png</respuesta>     
+    </Pregunta>
+
+
+    <Pregunta texto = "Diagrama de sintaxis que representa opción entre una cadena B y una cadena vacía:">
+        <respuesta tipo = "Correcta">/Imagenes/e_opcion2.png</respuesta>
+        <respuesta>/Imagenes/e_opcion1.png</respuesta>
+        <respuesta>/Imagenes/e_repetir1.png</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Diagrama de sintaxis que representa repetición de una o más veces B:">
+        <respuesta tipo = "Correcta">/Imagenes/e_repetir1.png</respuesta>
+        <respuesta>/Imagenes/e_opcion2.png</respuesta>
+        <respuesta>/Imagenes/e_repetir2.png</respuesta>
+    </Pregunta>
+
+
+    <Pregunta texto = "Diagrama de sintaxis que representa repetición de cero o más veces B:">
+        <respuesta tipo = "Correcta">/Imagenes/e_repetir2.png</respuesta>
+        <respuesta>/Imagenes/e_repetir1.png</respuesta>
+        <respuesta>/Imagenes/e_opcion1.png</respuesta>
+    </Pregunta>
+
+    <Pregunta texto = "Cadena aceptada por el siguiente diagrama de sintaxis:">
+        <imagen>/Imagenes/e_yuxtaposicion.png</imagen>
+        <respuesta tipo = "Correcta">AB</respuesta>
+        <respuesta>AA</respuesta>
+        <respuesta>BA</respuesta>
+    </Pregunta>
+    
+      <Pregunta texto = "Cadena(s) aceptada(s) por el siguiente diagrama de sintaxis:">
+        <imagen>/Imagenes/e_opcion1.png</imagen>
+        <respuesta tipo = "Correcta">A y B</respuesta>
+        <respuesta>A y Cadena Vacía</respuesta>
+        <respuesta>Sólo A</respuesta>
+    </Pregunta>
+
+  <Pregunta texto = "Cadena(s) aceptada(s) por el siguiente diagrama de sintaxis:">
+        <imagen>/Imagenes/e_opcion2.png</imagen>
+        <respuesta tipo = "Correcta">B y Cadena Vacía</respuesta>
+        <respuesta>A y B</respuesta>
+        <respuesta>Sólo B</respuesta>
+    </Pregunta>
+    
+      <Pregunta texto = "Cadena(s) aceptada(s) por el siguiente diagrama de sintaxis:">
+        <imagen>/Imagenes/e_repetir1.png</imagen>
+        <respuesta tipo = "Correcta">B, BB, ... , n veces B</respuesta>
+        <respuesta>Cadena Vacía y B</respuesta>
+        <respuesta>Sólo B</respuesta>
+    </Pregunta>
+    
+      <Pregunta texto = "Cadena(s) aceptada(s) por el siguiente diagrama de sintaxis:">
+        <imagen>/Imagenes/e_repetir2.png</imagen>
+        <respuesta tipo = "Correcta">Cadena vacía, B, BB, ... , n veces B</respuesta>
+        <respuesta>Sólo B</respuesta>
+        <respuesta>Sólo Cadena vacía</respuesta>
+    </Pregunta>
+    
+     <Pregunta texto = "Del siguiente diagrama de sintaxis, indique el símbolo no terminal:">
+         <imagen>/Imagenes/diagrama_secuencia.png</imagen>
+        <respuesta tipo = "Correcta">/Imagenes/e_noterminal.png</respuesta>
+        <respuesta>/Imagenes/e_terminal.png</respuesta>
+        <respuesta>/Imagenes/e_flecha.png</respuesta>
+    </Pregunta>
+    
+        
+     <Pregunta texto = "Del siguiente diagrama de sintaxis, indique el símbolo terminal:">
+         <imagen>/Imagenes/diagrama_secuencia.png</imagen>
+        <respuesta tipo = "Correcta">/Imagenes/e_terminal.png</respuesta>
+        <respuesta>/Imagenes/e_noterminal.png</respuesta>
+        <respuesta>/Imagenes/e_flecha.png</respuesta>
+    </Pregunta>
+
+    <Pregunta texto = "Del siguiente diagrama de sintaxis, indique el punto de entrada:">
+         <imagen>/Imagenes/diagrama_secuencia.png</imagen>
+        <respuesta tipo = "Correcta">/Imagenes/e_flecha.png</respuesta>
+        <respuesta>/Imagenes/e_noterminal.png</respuesta>
+        <respuesta>/Imagenes/e_terminal.png</respuesta>
+    </Pregunta>
+
+
+</preguntas>
